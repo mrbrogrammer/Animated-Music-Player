@@ -3,7 +3,7 @@ $( document ).ready(function() {
   $('.spinner-wrap').click(function() {
     
     var $this = $(this),
-        audio = $this.siblings('audio')[2],
+        audio = $this.siblings('audio')[0],
         bpm = Number($this.siblings('audio').data('bpm'))
         pulse = (60/bpm)*1000;
     
